@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "66cd7e2bbeaaa73f9838a806de3072cc"
+name = "order-alpha"
+handle = "order-alpha"
+application_url = "https://appears-tv-collectible-imported.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "cakesbakes1.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_assigned_fulfillment_orders,read_draft_orders,read_merchant_managed_fulfillment_orders,read_order_edits,read_orders,read_products,read_third_party_fulfillment_orders,write_assigned_fulfillment_orders,write_draft_orders,write_merchant_managed_fulfillment_orders,write_order_edits,write_orders,write_third_party_fulfillment_orders"
+
+[auth]
+redirect_urls = [
+  "https://appears-tv-collectible-imported.trycloudflare.com/auth/callback",
+  "https://appears-tv-collectible-imported.trycloudflare.com/auth/shopify/callback",
+  "https://appears-tv-collectible-imported.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks"
+
+[pos]
+embedded = false

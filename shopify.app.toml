@@ -3,7 +3,7 @@
 client_id = "66cd7e2bbeaaa73f9838a806de3072cc"
 name = "order-alpha"
 handle = "order-alpha"
-application_url = "https://threads-rush-cams-milwaukee.trycloudflare.com"
+application_url = "https://pepper-retail-based-installed.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_assigned_fulfillment_orders,read_draft_orders,read_merchant_manag
 
 [auth]
 redirect_urls = [
-  "https://threads-rush-cams-milwaukee.trycloudflare.com/auth/callback",
-  "https://threads-rush-cams-milwaukee.trycloudflare.com/auth/shopify/callback",
-  "https://threads-rush-cams-milwaukee.trycloudflare.com/api/auth/callback"
+  "https://pepper-retail-based-installed.trycloudflare.com/auth/callback",
+  "https://pepper-retail-based-installed.trycloudflare.com/auth/shopify/callback",
+  "https://pepper-retail-based-installed.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

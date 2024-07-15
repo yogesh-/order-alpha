@@ -24,6 +24,12 @@ const shopify = shopifyApp({
   ...(process.env.SHOP_CUSTOM_DOMAIN
     ? { customShopDomains: [process.env.SHOP_CUSTOM_DOMAIN] }
     : {}),
+  cors: {
+    origin: "*",
+    methods: "GET,POST,PUT,DELETE,OPTIONS,HEAD",
+    allowedHeaders: "Content-Type, Authorization",
+    
+  },
 });
 
 export default shopify;
